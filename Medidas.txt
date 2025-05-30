@@ -1,0 +1,89 @@
+------------------- 7. Rentabilidade -----------------------
+Total Quantidade Vendida = SUM(Vendas[Quantidade Vendida])
+
+Receita Total = SUMX(Vendas, Vendas[Quantidade Vendida] * Vendas[Preço Unitário])
+
+Margem Total = 
+SUMX(
+    Vendas,
+    (Vendas[Preço Unitário] - Vendas[Preço Unitário]) * Vendas[Quantidade Vendida]
+)
+
+Margem Média = 
+DIVIDE(
+    [Margem Total],
+    [Total Quantidade Vendida],
+    0
+)
+
+Preço Médio Unitário = AVERAGE(Vendas[Preço Unitário])
+
+
+----------------------- 6. Canal de venda ----------------------------
+
+Volume de Vendas = SUM(Vendas[Quantidade Vendida])
+
+
+
+
+----------------------------------------------------------------------------------------------
+--------------------- Perguntas Extra ---------------------------
+1. Desempenho de Vendas ao Longo do Tempo
+Pergunta: Como evoluíram as vendas ao longo dos meses?
+
+Decisão apoiada: Planeamento de stock e gestão de sazonalidade.
+
+2. Top Clientes por Volume de Compras
+Pergunta: Quais são os clientes que mais compram em termos de volume e valor?
+
+Decisão apoiada: Fidelização, campanhas personalizadas, política de descontos.
+
+3. Produtos Mais Vendidos
+Pergunta: Quais são os produtos com maior quantidade vendida e maior receita?
+
+Decisão apoiada: Otimização do sortido de produtos, promoção de best-sellers.
+
+4. Desempenho por Categoria ou Área de Produto
+Pergunta: Que categorias ou áreas geram mais receita?
+
+Decisão apoiada: Ajustes estratégicos na oferta e marketing.
+
+5. Rentabilidade por Canal
+Pergunta: Qual canal (por exemplo, Horeca vs. Retalho) gera mais vendas?
+
+Decisão apoiada: Foco comercial, investimentos em canais mais rentáveis.
+
+6. Comparação entre Vendedores
+Pergunta: Que vendedor gera mais receita ou volume?
+
+Decisão apoiada: Avaliação de desempenho, atribuição de clientes.
+
+7. Geografia das Vendas
+Pergunta: Que cidades têm maior volume de vendas?
+
+Decisão apoiada: Expansão geográfica, abertura de novas lojas ou centros de distribuição.
+
+8. Análise de Inatividade de Clientes
+Pergunta: Quantos clientes estão inativos (Ativo = "Não")? Há padrão comum?
+
+Decisão apoiada: Campanhas de reativação ou entendimento de churn.
+
+9. Relação entre Quantidade, Peso e Receita
+Pergunta: Produtos mais leves geram mais receita? Há correlação entre peso e volume vendido?
+
+Decisão apoiada: Otimização de logística e embalagem.
+
+10. Prazos Médios entre Venda e Vencimento
+Pergunta: Qual o prazo médio entre a data de venda e a de vencimento?
+
+Decisão apoiada: Política de crédito, análise de risco financeiro.
+
+
+-----------------------------------COISAS QUE O PROF QUER ------------------------------
+
+Crescimento anual ou mensal: medir a variação percentual do desempenho face ao mesmo periodo do anterior.
+
+Ticket médio por cliente: valor médio gasto por cliente (total vendas/nº total clientes)
+
+Analisar aqueles clientes que deixaram de comprar, ou seja, quebras por clientes
+
